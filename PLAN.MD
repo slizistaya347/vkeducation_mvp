@@ -138,4 +138,4 @@ vkeducation_mvp/
 │   │   │   │       └── app3.apk
 │   │   │   └── AndroidManifest.xml                  # Разрешения (Epic 3, задача 1)
 ├── build.gradle
-└── settings.gradle```
+└── settings.gradle
