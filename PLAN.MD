@@ -99,3 +99,42 @@
 ### Задача 3: Подготовить к сдаче (2 часа)
 - **Собрать APK (1ч)** — нужен файл для установки на устройство
 - **Проверить на эмуляторе (1ч)** — убедиться, что приложение запускается
+
+---
+
+## Структура проекта
+
+vkeducation_mvp/
+├── app/
+│   ├── src/
+│   │   ├── main/
+│   │   │   ├── java/com/example/vkeducation_mvp/
+│   │   │   │   ├── MainActivity.kt                    # Экран списка
+│   │   │   │   ├── AppDetailActivity.kt               # Экран карточки
+│   │   │   │   ├── data/
+│   │   │   │   │   ├── model/
+│   │   │   │   │   │   └── AppItem.kt                # Модель данных (Epic 1, задача 3)
+│   │   │   │   │   └── repository/
+│   │   │   │   │       └── AppRepository.kt          # Хранение данных (Epic 1, задача 4)
+│   │   │   │   ├── ui/
+│   │   │   │   │   ├── list/
+│   │   │   │   │   │   ├── AppAdapter.kt             # Адаптер списка (Epic 1, задача 2)
+│   │   │   │   │   │   └── AppListViewModel.kt       # ViewModel списка (Epic 1, задача 4)
+│   │   │   │   │   └── detail/
+│   │   │   │   │       └── AppDetailViewModel.kt     # ViewModel карточки
+│   │   │   │   └── installer/
+│   │   │   │       └── AppInstaller.kt               # Установка/удаление (Epic 3-4)
+│   │   │   ├── res/
+│   │   │   │   ├── layout/
+│   │   │   │   │   ├── activity_main.xml            # Главный экран (Epic 1, задача 1)
+│   │   │   │   │   ├── activity_app_detail.xml      # Экран деталей (Epic 2, задача 1)
+│   │   │   │   │   └── item_app.xml                 # Элемент списка (Epic 1, задача 1)
+│   │   │   │   ├── values/
+│   │   │   │   │   └── strings.xml
+│   │   │   │   └── raw/
+│   │   │   │       ├── app1.apk                     # Тестовые APK (Epic 3, задача 1)
+│   │   │   │       ├── app2.apk
+│   │   │   │       └── app3.apk
+│   │   │   └── AndroidManifest.xml                  # Разрешения (Epic 3, задача 1)
+├── build.gradle
+└── settings.gradle
