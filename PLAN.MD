@@ -104,7 +104,7 @@
 
 ## Структура проекта
 
-vkeducation_mvp/
+`vkeducation_mvp/
 ├── app/
 │ ├── src/
 │ │ ├── main/
@@ -137,4 +137,4 @@ vkeducation_mvp/
 │ │ │ │ └── app3.apk
 │ │ │ └── AndroidManifest.xml # Разрешения
 ├── build.gradle
-└── settings.gradle
+└── settings.gradle`
